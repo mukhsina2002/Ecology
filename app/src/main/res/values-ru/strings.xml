@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ecology</string>
+    <string name="ecology">Экология</string>
+    <string name="plants">Растения</string>
+    <string name="animals">Животные</string>
+    <string name="nature">Природные ресурсы</string>
+    <string name="recycler">Переработчик</string>
+    <string name="main_activity_title">[EN] This title is in English</string>
+    <string name="notificaiton_title">Время позаботиться о цветах!</string>
+    <string name="notificaiton_body">Поливайте цветы в вашей комнате как положено чтобы они не засохли.🪷</string>
+</resources>

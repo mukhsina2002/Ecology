@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ecology</string>
+    <string name="ecology">Ecology</string>
+    <string name="grees" translatable="false">🌱</string>
+    <string name="plants">Plants</string>
+    <string name="animals">Animals</string>
+    <string name="market" translatable="false">Market</string>
+    <string name="nature">Natural Resources</string>
+    <string name="recycler">Recycler</string>
+    <string name="main_activity_title">[EN] This title is in English</string>
+    <string name="notificaiton_title">Time to care of flowers !</string>
+    <string name="notificaiton_body">Water the flowers in your room properly so that they do not wither.🪷</string>
+</resources>

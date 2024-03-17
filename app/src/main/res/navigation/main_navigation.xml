@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/splashScreen">
+
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="uz.salikhdev.ecology.ui.splash.SplashScreen"
+        android:label="screen_splash"
+        tools:layout="@layout/screen_splash">
+        <action
+            android:id="@+id/action_splashScreen_to_homeScreen"
+            app:destination="@id/homeScreen"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="uz.salikhdev.ecology.ui.home.HomeScreen"
+        android:label="screen_home"
+        tools:layout="@layout/screen_home" >
+        <action
+            android:id="@+id/action_homeScreen_to_animalScreen"
+            app:destination="@id/animalScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_plantScreen"
+            app:destination="@id/plantScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_locationScreen"
+            app:destination="@id/locationScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_natureScreen"
+            app:destination="@id/natureScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/animalScreen"
+        android:name="uz.salikhdev.ecology.ui.animal.AnimalScreen"
+        android:label="screen_animal"
+        tools:layout="@layout/screen_animal" >
+        <action
+            android:id="@+id/action_animalScreen_to_animalDetailScreen"
+            app:destination="@id/animalDetailScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/animalDetailScreen"
+        android:name="uz.salikhdev.ecology.ui.aminal_detail.AnimalDetailScreen"
+        android:label="screen_animal_detail"
+        tools:layout="@layout/screen_animal_detail" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/plantDetailScreen"
+        android:name="uz.salikhdev.ecology.ui.plant_detail.PlantDetailScreen"
+        android:label="screen_plant_detail"
+        tools:layout="@layout/screen_plant_detail" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/plantScreen"
+        android:name="uz.salikhdev.ecology.ui.plant.PlantScreen"
+        android:label="screen_plant"
+        tools:layout="@layout/screen_plant" >
+        <action
+            android:id="@+id/action_plantScreen_to_plantDetailScreen"
+            app:destination="@id/plantDetailScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationScreen"
+        android:name="uz.salikhdev.ecology.ui.recycler.LocationScreen"
+        android:label="screen_location"
+        tools:layout="@layout/screen_location" />
+    <fragment
+        android:id="@+id/natureScreen"
+        android:name="uz.salikhdev.ecology.ui.natural_resource.NatureScreen"
+        android:label="screen_nature"
+        tools:layout="@layout/screen_nature" >
+        <action
+            android:id="@+id/action_natureScreen_to_pdfScreen"
+            app:destination="@id/pdfScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/pdfScreen"
+        android:name="uz.salikhdev.ecology.ui.pdf_viewer.PdfScreen"
+        android:label="screen_pdf"
+        tools:layout="@layout/screen_pdf" >
+        <argument
+            android:name="url"
+            app:argType="string" />
+    </fragment>
+
+
+</navigation>
